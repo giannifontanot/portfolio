@@ -1,1 +1,2 @@
-console.log("this is a messagex");
+console.log("this is a message");
+//alert("OK");

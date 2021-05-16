@@ -1,12 +1,174 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: linen;
+    background-color: #f9f7f7;
+    font-family: "Verdana";
+    padding: 0px;
+    border: 0px;
+    margin: 0px 0px 0px 0px;
+    line-height: 35px;
+
 }
 
-h1 {
-    color: maroon;
-    margin-left: 40px;
+header {
+    padding: 60px;
+    text-align: center;
+    background: #112d4e;
+    color: #fff;
 }
 
-.menu{
-    color: maroon;
+.rowColorTitle{
+    background-color: lightgray;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 120%;
+}
+
+.rowColorCont{
+    background-coxlor: lightgray;
+    padding: 20px;
+    font-weight: normal;
+}
+
+.frontImage{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: 3px;
+    flex: 0 0 300px;
+    transform: rotate(2deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+    margin: 20px;
+}
+
+nav {
+    display: flex;
+    background-color: white;
+
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+header h1{
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+header h5{
+    letter-spacing: 1px;
+}
+
+nav {
+    display: flex;
+    font-weight: normal;
+    background-color: #112d4e;
+
+}
+
+/* unvisited link */
+nav a:link {
+    color: red;
+    letter-spacing: 4px;
+}
+
+/* visited link */
+nav a:visited {
+    color: coral;
+}
+
+/* mouse over link */
+nav a:hover {
+    color: red;
+
+}
+
+/* selected link */
+nav  a:active {
+    color: blue;
+}
+
+main {
+    display: flex;
+    padding: 0px;
+}
+
+/* Define the widths: play around with these to get a best fit.
+*/
+@text-width: 180px;
+@num-width: 80px;
+
+.text{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: @text-width;
+    borxder: 1px solid darkgray;
+}
+
+.textRight{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: @text-width;
+    border: 1px solid darkgray;
+    padding: 25px;
+}
+
+
+.textLeft{
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: @text-width;
+    border: 1px solid darkgray;
+    background-color: #e5e5e5;
+    justify-content: flex-end;
+    padding: 25px;
+
+}
+
+.data{
+    border: 1px solid navy;
+    padding: 0px;
+}
+
+aside {
+    flex: 30%;
+    background-color: #668da9;
+    padding: 20px;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+section {
+    flex: 70%;
+    background-color: #f9f7f7;
+
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+}
+
+menu{
+    display:flex;
+    background-color: aqua;
+}
+
+.leftPanel{
+    display: flex;
+    justify-content: flex-end;
+    color:black;
+    font-size: large;
+    background-color: #668da9;
+
 }

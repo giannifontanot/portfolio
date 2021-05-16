@@ -1,22 +1,94 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Media Query for Screen</title>
+    <title>Portfolio</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="style.css"  rel="stylesheet" type="text/css" />
-    <!-- link href="style.css" rel="stylesheet" type="text/css"/ -->
     <script src="./assets/scripts/script.js"></script>
 
 </head>
-<body>
-<header>
 
-    <nav class="menu">
-about me | my work | contact
+<body>
+<header style="border: 0px solid #778da9">
+    <img class="frontImage" src="./assets/images/developer.jpg" alt="developer"">
+    <h1>Gianni Fontanot</h1>
+    <h5>giannifontanot@gmail.com</h5>
+    <nav >
+        <a href="#about" class="menu">about me</a>  &nbsp;&nbsp;&nbsp;
+        <a href="#work">my work</a>  &nbsp;&nbsp;&nbsp;
+        <a href="#contact">contact</a>
     </nav>
 </header>
+<main>
 
-<h1>this is h1</h1>
+
+
+    <table width="100%" border="1" style="border: 1px solid gray;">
+        <tr><td width="35%" align="right" class="rowColorTitle"><a name="about">About me</a></td>
+            <td class="rowColorCont">
+                I graduated in 2001 in C.S. and worked for some years doing
+                Web Development using good old CSS and Javascript. The Apache WS did
+                not exist yet at that time!
+                To publish our pages we used the Jaguar Web Server (have you ever
+                heard about it?) It was a webserver from a now defunct company called Sybase.
+                Currently I am a bilingual teacher working for Dallas ISD.
+                I am good with computers and ready to go back to coding!
+            </td>
+        </tr>
+        <tr>
+            <td width="35%" align="right" class="rowColorTitle"><a name="work">My Work</a></td>
+            <td class="rowColorCont">
+                Some time ago, I developed some small programs using HTML, CSS and Javascript to help the children get better in our Math lessons:</br></br>
+
+
+                <table border="1" bgcolor="#bdb76b">
+                    <tr>
+                        <td><img width=200 src="./assets/images/rounding.PNG" alt=""></td>
+                        <td align="center"><a href="./assets/scripts/redondeo.html" target="_blank">Rounding</a></td>
+                        <td>Students see a number on the screen and check try to round to the nearest hundred.</td>
+                    </tr>
+                    <tr>
+                        <td><img width=200 src="./assets/images/subtraction.PNG" alt=""></td>
+                        <td align="center"><a href="./assets/scripts/resta%20mental.html" target="_blank">Mental Math: Subtraction</a></td>
+                        <td>The computer show a subtraction on the screen and
+                            then the student tries to solve it. When the student is ready presses a button to
+                            check the answer.</td>
+                    </tr>
+                    <tr>
+                        <td><img width=200 src="./assets/images/addition.PNG" alt=""></td>
+                        <td align="center"><a href="./assets/scripts/suma%20mental.html" target="_blank">Mental Math: Addition</a></td>
+                        <td>Very similar to the last one, but instead of presenting substractions to the students,
+                            it presents additions.</td>
+                    </tr>
+                    <tr>
+                        <td><img width=200 src="./assets/images/HundredTableSubtraction.PNG" alt=""></td>
+                        <td align="center"><a href="./assets/scripts/Tabla%20de%20100%20suma%20y%20resta.html" target="_blank">Addition and subtraction using a hundred Table</a></td>
+                        <td>The computer presents a Hundred Table to help students determine the answer to the
+                            problem on the screen.</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="35%" align="right" class="rowColorTitle"><a name="contact">Contact</a></td>
+            <td class="rowColorCont">
+                <table border="0" >
+                    <tr><td>email: </td><td>giannifontanot@gmail.com</td></tr>
+                    <tr><td>phone: </td><td>(214) 809 - 4544</td></tr>
+                    <tr><td></td><td></td></tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    </br>
+
+
+</main>
+<footer>
+    &copy; 2021
+
+</footer>
+
 </body>
 </html>

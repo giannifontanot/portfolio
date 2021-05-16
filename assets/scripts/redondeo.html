@@ -1,0 +1,97 @@
+<html>
+<head>
+<style>
+   .classNombre{
+	font-family:"Comic Sans MS";
+        font-size:60pt;
+	color:black;
+	
+   }
+
+   .classSuma{
+	font-family:"Comic Sans MS";
+        font-size:52pt;
+	color:blue;
+	
+   }
+
+   .classTitulo{
+	font-family:"Comic Sans MS";
+        font-size:30pt;
+	color:black;
+	
+   }
+</style>
+</head>
+<body>
+<center class="classTitulo">Redondeo</center>
+<script>
+	var arrayNombres = new Array();
+	arrayNombres[0] = "Nazly";
+	arrayNombres[1] = "Joselyn";
+	arrayNombres[2] = "Francisco";
+	arrayNombres[3] = "Jose";
+	arrayNombres[4] = "Jenifer";
+	arrayNombres[5] = "Jared";
+	arrayNombres[6] = "Angelo";
+	arrayNombres[7] = "Elizabeth";
+	arrayNombres[8] = "Sedna";
+	arrayNombres[9] = "Gabriela";
+	arrayNombres[10] = "Brayan";
+	arrayNombres[11] = "Yuisa";
+	arrayNombres[12] = "Alan";
+	arrayNombres[13] = "Jesus";
+	arrayNombres[14] = "Ashley";
+	arrayNombres[15] = "Stefani";
+	arrayNombres[16] = "Yahaira";
+
+	var RandomNombre = Math.round(Math.random() * arrayNombres.length -1);
+	if(RandomNombre == -1){RandomNombre = Math.round(Math.random() * arrayNombres.length -1);}
+	document.writeln("<br><center class=classNombre>" + arrayNombres[RandomNombre]+ "</center>");
+</script>
+<script>
+ var primero = Math.round(Math.random() * 100);
+ var segundo = Math.round(Math.random() * 10);
+</script>
+<body bgcolor="white">
+<table border="0" align="center">
+<tr>
+<td><img src="ballon 2.jpg"></td>
+<td align="center"><script>document.writeln("<br><br><br><center class=classSuma>" + primero + " es aproximadamente...</center>");</script><br><br><br><br><br><br><br><br><br><br></td>
+<td><img src="ballon 2.jpg"></td>
+</table>
+<table bgcolor="yellow" border="1">
+<tr>
+<script>
+for(i=0;i<101;i++){
+	var bgcolor= "yellow";
+	if(i==0 ||i==10 ||i==20 ||i==30 ||i==40 ||i==50 ||i==60 ||i==70 ||i==80 ||i==90 ||i==100){
+		bgcolor = "red";	
+	}
+
+	document.writeln("<td bgcolor="+bgcolor+" width=10 style=font-size:15pt;>"+i+"&nbsp;</td>");
+}
+</script>
+</tr>
+</table>
+<br>
+<center><input type="button" style="font-size:20pt;" value="Siguiente" onclick="history.go(0);"></center>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
