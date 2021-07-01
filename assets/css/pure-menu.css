@@ -134,4 +134,38 @@ label #sign-one, #sign-two {
     }
 }
 
+.ta {
+    transition: 2.5s;
+    position: relative;
+    top: 15%;
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+    border-radius: 10px;
+}
 
+.ta h2 {
+    font-family: 'Big John', serif;
+    color: #000;
+    font-size: 10vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ta ta-contact {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.symbol {
+    font-size: 60px;
+    color: crimson;
+}
+
+.mail {
+    letter-spacing: 1px;
+}
