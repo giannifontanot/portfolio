@@ -1,0 +1,29 @@
+.custom-restricted-width {
+    /* To limit the menu width to the content of the menu: */
+    display: inline-block;
+    /* Or set the width explicitly: */
+    /* width: 10em; */
+}
+
+.portfolio {
+    background-color: #778da9;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.portfolio-dark {
+    background-color: #112d4e;
+    color: white;
+}
+
+.page {
+    color: black;
+    border-bottom: 1px solid pink;
+    font-weight: bolder;
+}
+
+.menu-side {
+    background-color: crimson;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+}

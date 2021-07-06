@@ -11,40 +11,55 @@
 }
 
 body {
-    font-family: "poppins", sans-serif;
+    font-family: prompt, sans-serif;
 }
 
-nav {
-    height: 50px;
+
+.nav-horizontal div {
+    height: 41px;
     background: #000;
+    width: available;
 }
 
-nav h1 {
+.nav-horizontal h1 {
     position: absolute;
     width: 230px;
-    top: 3px;
-    left: 3%;
+    top: 10px;
+    left: 1%;
     color: #fff;
     text-transform: uppercase;
     font-size: larger;
     letter-spacing: 3px;
+    margin: 0px;
+
+    animation: 1s ease-out 0s 1 slideInFromLeft;
 }
 
-nav ul {
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.nav-horizontal div ul {
     float: right;
     margin-left: 0;
+    margin-top: 0;
     list-style: none;
 }
 
-nav ul li {
+.nav-horizontal div ul li {
     display: inline-block;
-    line-height: 50px;
+    line-height: 23px;
     margin: 0 15px;
 }
 
-nav ul li a {
+.nav-horizontal div ul li a {
     position: relative;
-    padding: 5px 0;
+    padding: 0;
     color: #fff;
     font-size: 18px;
     text-decoration: none;
@@ -64,12 +79,36 @@ label #sign-one, #sign-two {
     display: none;
 }
 
+
+.nav-horizontal {
+    display: block;
+}
+
+.nav-vertical {
+    display: none;
+    position: fixed;
+    z-index: 100;
+}
+
 .banner-area {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/GoldenGate2.jpg);
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
     height: 100vh;
+}
+
+
+.banner-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-text h2 {
@@ -80,49 +119,30 @@ label #sign-one, #sign-two {
     text-align: center;
 }
 
-.banner-text {
-    position: absolute;
-    width: 90%;
-    height: 100%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-@media (max-width: 870px) {
+@media (max-width: 800px) {
+    /*label{*/
+    /*    display: block;*/
+    /*    visibility: visible;*/
+    /*}*/
     label #sign-one {
         display: block;
     }
 
-    nav ul {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: crimson;
-        top: 50px;
-        left: -50px;
-        text-align: center;
-        transition: 0.5s;
-        z-index: 10;
+    .nav-horizontal .pure-menu-list {
+        display: none;
     }
 
-    nav ul li {
+    /*.nav-vertical .pure-menu .pure-menu-list*/
+    #res-menu:checked ~ #header_owner {
+        /*left: -100%;*/
         display: block;
-        margin: 40px 0;
-        line-height: 30px;
+        color: fuchsia;
+        /*display: none;*/
     }
 
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    #res-menu:checked ~ ul {
-        left: -100%;
-        /*background: transparent;*/
+    #res-menu:checked ~ .nav-vertical {
+        display: none;
     }
 
     #res-menu:checked ~ label #sign-one {
@@ -132,14 +152,17 @@ label #sign-one, #sign-two {
     #res-menu:checked ~ label #sign-two {
         display: block;
     }
+
+    .nav-vertical {
+        display: block;
+        top: 25%;
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+    }
+
 }
 
-.ta {
-    transition: 2.5s;
+.whiteboard {
     position: relative;
-    top: 15%;
-    width: 50%;
-    height: 50%;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -147,18 +170,636 @@ label #sign-one, #sign-two {
     border-radius: 10px;
 }
 
-.ta h2 {
-    font-family: 'Big John', serif;
+/*.  ---------------------------------------------------------------.*/
+.articleFlexContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.articleFlexContainer {
+    width: 100%;
+}
+
+/*.  ---------------------------------------------------------------.*/
+
+@media (min-width: 1200px) {
+    footer {
+        background-color: black;
+    }
+
+    .whiteboard {
+        top: 10%;
+        width: 80%;
+        height: 70%;
+    }
+
+    .articleFlexContainer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .articleFlexContainer h3 { /*Title Weather Dashboard*/
+        width: 100px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .description-container {
+        width: 30%;
+        padding: 4vh;
+        line-height: 1.5em;
+        padding-top: 25px;
+    }
+
+    .description-container p {
+        padding-bottom: 45px;
+        font-size: 120%;
+        line-height: 1.5em;
+    }
+
+    .image-container {
+        width: 60%;
+        padding: 2vh;
+    }
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+    .whiteboard h3 {
+        font-size: 7vh;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 32px;
+        line-height: 1.0em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 5px;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 120%;
+    }
+}
+
+/*.  ---------------------------------------------------------------.*/
+@media (max-width: 1200px) and (min-width: 1000px) and  (max-height: 800px) and (min-height: 700px) {
+    footer {
+        background-color: blue;
+    }
+
+    .whiteboard {
+        top: 10%;
+        width: 80%;
+        height: 70%;
+    }
+
+    .articleFlexContainer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .articleFlexContainer h3 { /*Title Weather Dashboard*/
+        width: 100px;
+        margin-top: 45px;
+    }
+
+    .description-container {
+        width: 30%;
+        padding: 4vh;
+        line-height: 1.5em;
+        padding-top: 25px;
+    }
+
+    .description-container p {
+        padding-bottom: 45px;
+    }
+
+    .image-container {
+        width: 50%;
+        padding: 1vh;
+        margin-top: 80px;
+    }
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+    .whiteboard h3 {
+        font-size: 7vh;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 25px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 80%;
+    }
+}
+
+/*.  ---------------------------------------------------------------.*/
+
+@media (max-width: 800px) and (min-width: 700px) and  (max-height: 1100px) and (min-height: 1000px) {
+    footer {
+        background-color: red;
+        margin-top: 15px;
+    }
+
+    .whiteboard {
+        top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+
+    .articleFlexContainer {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .articleFlexContainer h3 { /*Title Weather Dashboard*/
+        width: 100px;
+        margin-top: 20px;
+    }
+
+    .description-container {
+        width: 100%;
+        line-height: 2.0em;
+        padding: 25px;
+    }
+
+    .description-container p {
+        padding-bottom: 35px;
+        font-size: 180%;
+    }
+
+    .image-container {
+        width: 100%;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+    .whiteboard h3 {
+        font-size: 52px;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 25px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 100%;
+    }
+}
+
+/*.  ---------------------------------------------------------------.*/
+
+@media (max-width: 1000px) and (min-width: 800px) and  (max-height: 500px) and (min-height: 350px) {
+    footer {
+        background-color: darkorange;
+        margin-top: 15px;
+    }
+
+    .whiteboard {
+        top: 10%;
+        width: 80%;
+        height: 80%;
+    }
+
+    .articleFlexContainer {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .articleFlexContainer h3 { /*Title Weather Dashboard*/
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .description-container {
+        width: 30%;
+        line-height: 1.3em;
+        padding-right: 25px;
+    }
+
+    .description-container p {
+        padding-bottom: 10px;
+        font-size: 85%;
+    }
+
+    .image-container {
+        width: 60%;
+        padding: 0px;
+        margin-top: 20px;
+    }
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+    .whiteboard h3 {
+        font-size: 35px;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 16px;
+        line-height: 1.5em;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 70%;
+    }
+}
+
+
+/*.  ---------------------------------------------------------------.*/
+
+@media (max-width: 500px) and (min-width: 400px) and  (max-height: 900px) and (min-height: 800px) {
+    footer {
+        margin-top: 40px;
+        background-color: green;
+    }
+
+    .whiteboard {
+        top: 5%;
+        width: 80%;
+        height: 80%;
+    }
+
+    .articleFlexContainer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .articleFlexContainer h3 { /*Title Weather Dashboard*/
+        margin-top: 40px;
+    }
+
+    .description-container {
+        width: 90%;
+        line-height: 25px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .description-container p {
+        padding-bottom: 55px;
+        font-size: 150%;
+    }
+
+    .image-container {
+        width: 100%;
+        padding: 2vh;
+        margin-top: 45px;
+    }
+
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+
+    .whiteboard h3 {
+        font-size: 30px;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 22px;
+        line-height: 1.0em;
+        text-transform: uppercase;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 110%;
+    }
+}
+
+/*.  ---------------------------------------------------------------.*/
+
+@media (max-width: 700px) and (min-width: 600px) and  (max-height: 450px) and (min-height: 300px) {
+    footer {
+        margin-top: 10px;
+        background-color: yellow;
+    }
+
+    .whiteboard {
+        top: 5%;
+        width: 95%;
+        height: 90%;
+    }
+
+    .articleFlexContainer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .articleFlexContainer h3 { /*Title Weather Dashboard*/
+        margin-top: 25px;
+    }
+
+    .description-container {
+        width: 35%;
+        line-height: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .description-container p {
+        padding-bottom: 45px;
+        font-size: 80%;
+    }
+
+    .image-container {
+        width: 50%;
+        padding: 2vh;
+        margin-top: 35px;
+    }
+
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+
+    .whiteboard h3 {
+        font-size: 30px;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 16px;
+        line-height: 1.0em;
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 70%;
+    }
+}
+
+/*.  ---------------------------------------------------------------.*/
+
+@media (max-width: 400px) and (min-width: 250px) and  (max-height: 850px) and (min-height: 600px) {
+    footer {
+        margin-top: 10px;
+        background-color: purple;
+    }
+
+    .whiteboard {
+        top: 5%;
+        width: 90%;
+        height: 85%;
+    }
+
+    .articleFlexContainer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .articleFlexContainer h3 { /*Title Weather Dashboard*/
+        margin-top: 45px;
+    }
+
+    .description-container {
+        width: 80%;
+        line-height: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .description-container p {
+        padding-bottom: 45px;
+        font-size: 80%;
+    }
+
+    .image-container {
+        width: 100%;
+        padding: 2vh;
+        margin-top: 35px;
+    }
+
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+
+    .whiteboard h3 {
+        font-size: 30px;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 16px;
+        line-height: 1.0em;
+        text-transform: uppercase;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 90%;
+    }
+}
+
+/*.  ---------------------------------------------------------------.*/
+/*.  ---------------------------------------------------------------.*/
+
+@media (max-width: 550px) and (min-width: 400px) and  (max-height: 400px) and (min-height: 300px) {
+    footer {
+        margin-top: 10px;
+        background-color: olive;
+    }
+
+    .whiteboard {
+        top: 5%;
+        width: 90%;
+        height: 75%;
+    }
+
+    .articleFlexContainer {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .articleFlexContainer h3 { /*Title Weather Dashboard*/
+        margin-top: 8px;
+    }
+
+    .description-container {
+        width: 30%;
+        line-height: 16px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .description-container p {
+        padding-bottom: 15px;
+        font-size: 60%;
+    }
+
+    .image-container {
+        width: 60%;
+        padding: 2vh;
+        margin-top: 35px;
+    }
+
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+
+    .whiteboard h3 {
+        font-size: 18px;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 12px;
+        line-height: 1.0em;
+        text-transform: uppercase;
+        margin-top: 15px;
+        margin-bottom: 7px;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 30%;
+    }
+}
+
+/*.  ---------------------------------------------------------------.*/
+
+
+.portfolio-sections {
+}
+
+.img-portfolio {
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+}
+
+
+.button-container {
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.whiteboard h1, h2, h3, h4, h5, h6 {
     color: #000;
-    font-size: 10vh;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    display: block;
 }
 
-.ta ta-contact {
-    margin-right: auto;
-    margin-left: auto;
+footer {
+    position: relative;
+    bacxkground-color: white;
+    font-size: 12px;
+    color: lightgray;
+    box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.1);
+    border: 1px solid lightgray;
 }
 
 .symbol {
