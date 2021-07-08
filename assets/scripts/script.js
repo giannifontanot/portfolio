@@ -3,8 +3,12 @@
  *  @param - it does not have any parameters.
  */
 function init() {
-    // Runs function
+    //  try {
     fSwitchMenu();
+    //   } catch (e) {
+    //console.error('init:' + 'type: ' + e.messageType + 'message: ' + e.message);
+    // }
+    // Runs function
 }
 
 /**
@@ -14,7 +18,7 @@ function init() {
  *  @param - does not have any parameters
  */
 function fSwitchMenu() {
-
+    // try {
     // Find the contaoiner element of the menu
     var divMenuEl = document.querySelector('.pure-menu');
     // Adds / deletes the class depending on
@@ -25,8 +29,11 @@ function fSwitchMenu() {
         divMenuEl.classList.remove('pure-menu-horizontal');
     }
     // Refreshes the nav bar to show tha changes
-    document.getElementById('nav').style.display = 'none';
-    document.getElementById('nav').style.display = 'block';
+    document.querySelector('nav').style.display = 'none';
+    document.querySelector('nav').style.display = 'block';
+    // } catch (e) {
+    // console.error('fSwitchMenu: ' + 'type: ' + e.messageType + ' message: ' + e.message);
+    //  }
 }
 
 /**
