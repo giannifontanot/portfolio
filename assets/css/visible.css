@@ -1,4 +1,4 @@
-.vred {
+. {
     border: 1px solid red;
 }
 
@@ -8,16 +8,4 @@
 
 .vblue {
     border: 1px solid blue;
-}
-
-.bred {
-    background-color: red;
-}
-
-.bgreen {
-    background-color: lightgreen;
-}
-
-.bblue {
-    background-color: lightblue;
 }

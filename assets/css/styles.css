@@ -1,7 +1,37 @@
-/*:root{*/
-/*    --background: #B7B8B6;*/
-/*    --foreground: #4CB5F5;*/
-/*    --color-detail-1: #34675C;*/
-/*    --color-detail-2: #B3C100;*/
-/*}*/
+/* As defined in */
+/* https://github.com/airbnb/css */
 
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary,
+.button-github-repository,
+.button-live-link {
+    color: var(--button-color);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: var(--button-background-success);
+}
+
+.button-error {
+    background: var(--button-background-error);
+}
+
+.button-warning {
+    background: var(--button-background-warning);
+}
+
+.button-secondary {
+    background: var(--button-background-secondary);
+}
+
+.button-github-repository {
+    background: var(--button-background-github-repository);
+}
+
+.button-live-link {
+    background: var(--button-background-live-link);
+}

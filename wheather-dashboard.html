@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard - Portfolio</title>
+    <!--    PureCSS requirement-->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!--    PureCSS requirement-->
+    <link crossorigin="anonymous"
+          href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+          integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+          rel="stylesheet"/>
+    <link href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" rel="stylesheet">
+
+    <!--    fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link crossorigin="anonymous"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          rel="stylesheet"/>
+
+    <link href="./assets/css/pure-menu.css" rel="stylesheet">
+    <link href="assets/css/globals.css" rel="stylesheet">
+    <link href="./assets/css/visible.css" rel="stylesheet">
+    <link href="assets/css/screen-size.css" rel="stylesheet">
+</head>
+<body onload="init();" onresize="fSwitchMenu();">
+<!--navigation-->
+<nav>
+    <input checked id="cbx-label" type="checkbox">
+    <label for="cbx-label">
+        <span class="sign-close">&#9747;</span>
+        <span class="sign-hamburger">&#9776;</span>
+    </label>
+    <h1 id="header_owner">Gianni Fontanot</h1>
+    <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a class="pure-menu-link" href="javascript:fOpenHTML('index.html');">Home</a>
+            </li>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a class="pure-menu-link" href="#">Live Portfolio</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('Weather-Dashboard');">Weather
+                            Dashboard</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('password-generator');">Password
+                            Generator</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('Date-night-in');">Project: Date Night
+                            In</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pure-menu-item"><a class="pure-menu-link"
+                                          href="javascript:window.open('https://github.com/giannifontanot', '_blank');">GitHub</a>
+            </li>
+            <li class="pure-menu-item"><a class="pure-menu-link"
+                                          href="javascript:window.open('https://www.linkedin.com/in/gianni-fontanot', '_blank');">Linkedin</a>
+            </li>
+            <li class="pure-menu-item"><a class="pure-menu-link"
+                                          href="javascript:window.open('./assets/files/Gianni-Fontanot-RESUME.pdf', '_blank');">Resume</a>
+            </li>
+            <li class="pure-menu-item"><a class="pure-menu-link"
+                                          href="javascript:fOpenHTML('contact.html');">Contact</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="javascript:fOpenHTML('about.html');">About</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="banner-area">
+    <div class="whiteboard">
+        <article class="article-flex-container">
+            <h3 class="vblue">Weather Dashboard</h3>
+            <!--            Section 1: Description-->
+            <section class="description-container">
+                <h4>Do you need an umbrella?</h4>
+                <p>This little app aims to show the weather of any country in the world,
+                    along with the moon phases for the next five days... Werewolves, take note!</p>
+                <div class="button-container" style="justify-content: center">
+                    <button class="pure-button button-github-repository" onclick="fOpenRepo('Wheather-Dashboard')">
+                        <i class="fab fa-github"></i>&nbsp;&nbsp;GitHub repo
+                    </button>
+                    &nbsp;
+                    <button class="pure-button button-live-link" onclick="fOpenLive('Wheather-Dashboard')">
+                        <i class="fas fa-satellite-dish"></i>&nbsp;&nbsp;Live link
+                    </button>
+                </div>
+            </section>
+            <!--            Section 2: Image-->
+            <section class="image-container ">
+                <img class="pure-img img-portfolio" src="assets/images/weather-dashboard.gif"/>
+            </section>
+        </article>
+        <footer class="">&copy Gianni Fontanot 2021</footer>
+    </div>
+</div>
+
+<script src="./assets/scripts/every-page-script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

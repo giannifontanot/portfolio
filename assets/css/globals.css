@@ -1,0 +1,32 @@
+/* As defined in */
+/* https://github.com/airbnb/css */
+
+:root {
+    /*buttons*/
+    --button-color: white;
+    --button-background-success: rgb(28, 184, 65);
+    --button-background-error: rgb(202, 60, 60);
+    --button-background-warning: rgb(223, 117, 20);
+    --button-background-secondary: rgb(66, 184, 221);
+    --button-background-github-repository: #F2134F;
+    --button-background-live-link: #359AF2;
+
+    /*menu*/
+    --switch-go-vertical: 700px;
+    --menu-anchor-color: #fff;
+    --menu-hamburger-color: #fff;
+    --menu-background-vertical: crimson;
+    --submenu-vertical-background: lightcoral;
+    --submenu-vertical-color: white;
+    --menu-link-color: white;
+    --submenu-link-color: white;
+    --menu-hover-background: #F2E205;
+    --menu-hover-color: #023059;
+
+    /*text and area color*/
+    --banner-text-heading: #fff;
+    --whiteboard-color: white;
+    --symbol-color: crimson;
+    --footer-color: lightgray;
+}
+
