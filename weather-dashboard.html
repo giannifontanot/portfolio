@@ -22,14 +22,16 @@
 
     <link href="./assets/css/globals.css" rel="stylesheet">
     <link href="./assets/css/pure-menu.css" rel="stylesheet">
-    <link href="./assets/css/screen-size.css" rel="stylesheet">
+    <link href="./assets/css/menu-orientation.css" rel="stylesheet">
+    <link href="./assets/css/screen-orientation-portrait.css" rel="stylesheet">
+    <link href="./assets/css/screen-orientation-landscape.css" rel="stylesheet">
 
 </head>
 <body onload="init();" onresize="fSwitchMenu();">
 <!--navigation-->
 <nav>
     <input checked type="checkbox" id="cbx-menu">
-    <label for="cbx-menu"  class="vred">
+    <label for="cbx-menu">
         <span id="sign-close">&#9747;</span>
         <span id="sign-hamburger">&#9776;</span>
     </label>
@@ -42,15 +44,18 @@
                 <a class="pure-menu-link" href="#">Live Portfolio</a>
                 <ul class="pure-menu-children">
                     <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="javascript:fOpenHTML('Weather-Dashboard');">Weather
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('weather-dashboard.html');">Weather
                             Dashboard</a>
                     </li>
                     <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="javascript:fOpenHTML('password-generator');">Password
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('password-generator.html');">Password
                             Generator</a>
                     </li>
                     <li class="pure-menu-item">
-                        <a class="pure-menu-link" href="javascript:fOpenHTML('Date-night-in');">Project: Date Night
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('portfolio-site.html');">Portfolio site</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('Date-night-in.html');">Project: Date Night
                             In</a>
                     </li>
                 </ul>
@@ -74,32 +79,32 @@
 <div class="banner-area">
     <div class="whiteboard">
         <article class="article-flex-container">
-            <h3 class="vblue">Weather Dashboard</h3>
+            <h3>Weather Dashboard</h3>
             <!--            Section 1: Description-->
             <section class="description-container">
                 <h4>Do you need an umbrella?</h4>
                 <p>This little app aims to show the weather of any country in the world,
                     along with the moon phases for the next five days... Werewolves, take note!</p>
-                <div class="button-container" style="justify-content: center">
+                <div class="button-container">
                     <button class="pure-button button-github-repository" onclick="fOpenRepo('Wheather-Dashboard')">
                         <i class="fab fa-github"></i>&nbsp;&nbsp;GitHub repo
                     </button>
-                    &nbsp;
                     <button class="pure-button button-live-link" onclick="fOpenLive('Wheather-Dashboard')">
                         <i class="fas fa-satellite-dish"></i>&nbsp;&nbsp;Live link
                     </button>
                 </div>
             </section>
             <!--            Section 2: Image-->
-            <section class="image-container ">
-                <img class="pure-img img-portfolio" src="assets/images/weather-dashboard.gif"/>
+            <section class="image-container">
+                <img class="pure-img img-portfolio" src="./assets/images/weather-dashboard.gif"/>
             </section>
         </article>
-        <footer class="">&copy Gianni Fontanot 2021</footer>
+        <footer>&copy Gianni Fontanot 2021</footer>
     </div>
 </div>
 
-<script src="assets/scripts/global.js"></script>
+<script src="./assets/scripts/globals.js"></script>
+<script src="./assets/scripts/commons.js"></script>
 </body>
 </html>
 

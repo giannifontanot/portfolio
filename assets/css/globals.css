@@ -2,6 +2,13 @@
 /* https://github.com/airbnb/css */
 
 :root {
+     /*Adobe Color*/
+     --adobe-color-1: #8C1B39;
+     --adobe-color-2: #034C8C;
+     --adobe-color-3: #023059;
+     --adobe-color-4: #359AF2;
+     --adobe-color-5: #F2E205;
+
     /*buttons*/
     --button-color: white;
     --button-background-success: rgb(28, 184, 65);
@@ -10,9 +17,9 @@
     --button-background-secondary: rgb(66, 184, 221);
     --button-background-github-repository: #F2134F;
     --button-background-live-link: #359AF2;
+    --button-background-disabled: #F2E205;
 
     /*menu*/
-    --switch-go-vertical: 1700px;
     --menu-anchor-color: #fff;
     --menu-hamburger-color: #fff;
     --menu-background-vertical: crimson;

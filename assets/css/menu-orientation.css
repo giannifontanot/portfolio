@@ -1,0 +1,64 @@
+/**
+ * Important variables:
+ *
+ * var SWITCH_GO_VERTICAL in Javascript file: Defines the width at which
+ * the menu will switch form horizontal to vertical. This value
+ * must match the value in the CSS media query located inside of
+ * menu-orientation.css In this case it is fixed at 800px.
+ */
+
+@media (max-width: 800px) {
+    label #sign-close {
+        display: block;
+    }
+    label #sign-hamburger {
+        display: none;
+    }
+
+    nav div ul {
+        background-color: var(--menu-background-vertical);
+        color: white;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+        top: 41px;
+        position: relative;
+    }
+
+    nav div ul li {
+        border-bottom: 1px solid gray;
+    }
+
+    nav div ul li ul li {
+        background-color: var(--submenu-vertical-background);
+        color: var(--submenu-vertical-color);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+    }
+
+    .pure-menu-link {
+        color: var(--menu-link-color);
+        font-weight: normal;
+    }
+
+    .pure-menu-link .pure-menu-link {
+        color: var(--submenu-link-color);
+        font-weight: normal;
+    }
+
+    .pure-menu-link:hover {
+        color: var(--menu-hover-color);
+        font-weight: bold;
+        background-color: var(--menu-hover-background);
+    }
+
+    #cbx-menu:checked ~ div ul {
+        left: -100%;
+    }
+
+    #cbx-menu:checked ~ label #sign-close {
+        display: none;
+    }
+
+    #cbx-menu:checked ~ label #sign-hamburger {
+        display: block;
+    }
+}

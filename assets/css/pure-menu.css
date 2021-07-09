@@ -1,23 +1,13 @@
-
 /**
 *  As defined in
 *  https://github.com/airbnb/css
 */
 
-/**
- * Important variables:
- *
- * var SWITCH_GO_VERTICAL : Defines the width at which the menu
- * on top will switch form horizontal to vertical. This value
- * must match the value in the CSS media query located inside of
- * pure-menu.css In this case it is fixed at 800px.
- */
-
 @font-face {
     font-family: 'Big John';
     font-style: normal;
     font-weight: normal;
-    src: local('Big John'), url('Big John.woff') format('woff');
+    src: local('Big John'), url('../fonts/Big John.woff') format('woff');
 }
 
 * {
@@ -110,10 +100,11 @@ nav ul li a {
 .banner-text h2 {
     font-family: 'Big John', serif;
     color: var(--banner-text-heading);
-    margin-top: -140px;
+    margin-top: -180px;
     font-size: 60px;
     text-align: center;
 }
+
 label #sign-close, #sign-hamburger {
     font-size: 30px;
     color: var(--menu-hamburger-color);
@@ -123,63 +114,9 @@ label #sign-close, #sign-hamburger {
     cursor: pointer;
     display: none;
 }
-#cbx-menu{
+
+#cbx-menu {
     display: none;
-}
-@media (max-width: 800px) {
-    label #sign-close {
-        display: block;
-    }
-    label #sign-hamburger {
-        display: none;
-    }
-
-    nav div ul {
-        background-color: var(--menu-background-vertical);
-        color: white;
-        border-radius: 0 10px 10px 0;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
-        top: 41px;
-        position: relative;
-    }
-
-    nav div ul li {
-        border-bottom: 1px solid gray;
-    }
-
-    nav div ul li ul li {
-        background-color: var(--submenu-vertical-background);
-        color: var(--submenu-vertical-color);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
-    }
-
-    .pure-menu-link {
-        color: var(--menu-link-color);
-        font-weight: normal;
-    }
-
-    .pure-menu-link .pure-menu-link {
-        color: var(--submenu-link-color);
-        font-weight: normal;
-    }
-
-    .pure-menu-link:hover {
-        color: var(--menu-hover-color);
-        font-weight: bold;
-        background-color: var(--menu-hover-background);
-    }
-
-    #cbx-menu:checked ~ div ul {
-        left: -100%;
-    }
-
-    #cbx-menu:checked ~ label #sign-close {
-        display: none;
-    }
-
-    #cbx-menu:checked ~ label #sign-hamburger {
-        display: block;
-    }
 }
 
 .whiteboard {
@@ -215,6 +152,9 @@ label #sign-close, #sign-hamburger {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .whiteboard h1, h2, h3, h4, h5, h6 {
@@ -232,12 +172,20 @@ footer {
 }
 
 .symbol {
-    font-size: 60px;
+    font-size: 10vh;
     color: var(--symbol-color);
 }
 
 .mail {
     letter-spacing: 1px;
+}
+
+.contact-text{
+    font-size: 2vh;
+    margin-top: 0;
+    margin-right: 5vh;
+    margin-left: 5px;
+
 }
 
 /*Buttons*/
@@ -247,7 +195,8 @@ footer {
 .button-warning,
 .button-secondary,
 .button-github-repository,
-.button-live-link {
+.button-live-link,
+.button-disabled {
     color: var(--button-color);
     border-radius: 4px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
@@ -269,10 +218,21 @@ footer {
     background: var(--button-background-secondary);
 }
 
+.button-disabled {
+    background: var(--button-background-disabled);
+    color: black;
+}
+
 .button-github-repository {
     background: var(--button-background-github-repository);
+    margin: 2px;
 }
 
 .button-live-link {
     background: #359AF2;
+    margin: 2px;
+}
+
+.vred {
+    /*border: 1px solid red;*/
 }

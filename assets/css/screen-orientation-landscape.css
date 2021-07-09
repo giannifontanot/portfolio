@@ -1,0 +1,127 @@
+/*Formatting according to*/
+/*https://github.com/airbnb/css*/
+
+/*.  ---------------------------------------------------------------.*/
+@media screen and (orientation:landscape){
+    footer {
+        margin-top: 0.5vh;
+        /*background-color: #F2E205;*/
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .description-container-contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .description-container-contact>div{
+        display: flex;
+        flex-direction: column;
+        alignment: center;
+        justify-content: space-around;
+    }
+
+    .description-container-contact>div>div{
+        display: flex;
+        flex-direction: row;
+        alignment: center;
+        justify-content: space-around;
+        margin-right: 2px;
+    }
+
+    .whiteboard {
+        top: 10%;
+        width: 80%;
+        height: 70%;
+    }
+
+    .whiteboard-contact {
+        top: 10%;
+        width: 50%;
+        height: 45%;
+    }
+
+    .article-flex-container {
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .article-flex-container h3 { /*Title Weather Dashboard*/
+        width: 100px;
+        margin-top: 3.5vh;
+    }
+
+    .description-container {
+        width: 35%;
+        padding: 3.5vh;
+    }
+
+    .description-container-contact {
+        width: 80%;
+        padding: 3.5vh;
+    }
+
+    .description-container p {
+        line-height: 1.5em;
+        padding-bottom: 2vh;
+        font-size: 3vh;
+    }
+
+    .image-container {
+        width: 50%;
+        padding: 1vh;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .whiteboard h1 {
+        font-size: 14vh;
+        margin: 25px;
+    }
+
+    .whiteboard h2 {
+        font-size: 10vh;
+        margin: 25px;
+    }
+
+    .whiteboard h3 {
+        font-size: 7vh;
+        font-family: 'Big John', serif;
+        width: 100%;
+    }
+
+    .whiteboard h4 {
+        font-size: 4.5vh;
+        line-height: 1.3em;
+        text-transform: uppercase;
+        margin-top: 2vh;
+        margin-bottom: 4.5vh;
+        width: 100%;
+    }
+
+    .whiteboard-contact h4 {
+        font-size: 2.5vh;
+        line-height: 1.3em;
+        text-transform: uppercase;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 100%;
+    }
+
+    .button-container {
+        font-size: 2vh;
+    }
+}
+
+.vred{
+    bxrder: 1px solid red;
+}
