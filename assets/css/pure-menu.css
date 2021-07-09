@@ -1,3 +1,18 @@
+
+/**
+*  As defined in
+*  https://github.com/airbnb/css
+*/
+
+/**
+ * Important variables:
+ *
+ * var SWITCH_GO_VERTICAL : Defines the width at which the menu
+ * on top will switch form horizontal to vertical. This value
+ * must match the value in the CSS media query located inside of
+ * pure-menu.css In this case it is fixed at 800px.
+ */
+
 @font-face {
     font-family: 'Big John';
     font-style: normal;
@@ -70,19 +85,6 @@ nav ul li a {
     text-decoration: none;
 }
 
-label #sign-close, #sign-hamburger {
-    font-size: 30px;
-    color: var(--menu-hamburger-color);
-    float: right;
-    line-height: 50px;
-    margin-right: 30px;
-    cursor: pointer;
-    display: none;
-}
-
-#cbx-label {
-    display: none;
-}
 
 .banner-area {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/goldengate.jpg);
@@ -112,10 +114,24 @@ label #sign-close, #sign-hamburger {
     font-size: 60px;
     text-align: center;
 }
-
-@media (max-width: var(--switch-go-vertical)) {
+label #sign-close, #sign-hamburger {
+    font-size: 30px;
+    color: var(--menu-hamburger-color);
+    float: right;
+    line-height: 50px;
+    margin-right: 30px;
+    cursor: pointer;
+    display: none;
+}
+#cbx-menu{
+    display: none;
+}
+@media (max-width: 800px) {
     label #sign-close {
         display: block;
+    }
+    label #sign-hamburger {
+        display: none;
     }
 
     nav div ul {
@@ -153,15 +169,15 @@ label #sign-close, #sign-hamburger {
         background-color: var(--menu-hover-background);
     }
 
-    #cbx-label:checked ~ div ul {
+    #cbx-menu:checked ~ div ul {
         left: -100%;
     }
 
-    #cbx-label:checked ~ label .sign-close {
+    #cbx-menu:checked ~ label #sign-close {
         display: none;
     }
 
-    #cbx-label:checked ~ label .sign-hamburger {
+    #cbx-menu:checked ~ label #sign-hamburger {
         display: block;
     }
 }
@@ -222,4 +238,41 @@ footer {
 
 .mail {
     letter-spacing: 1px;
+}
+
+/*Buttons*/
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary,
+.button-github-repository,
+.button-live-link {
+    color: var(--button-color);
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+    background: var(--button-background-success);
+}
+
+.button-error {
+    background: var(--button-background-error);
+}
+
+.button-warning {
+    background: var(--button-background-warning);
+}
+
+.button-secondary {
+    background: var(--button-background-secondary);
+}
+
+.button-github-repository {
+    background: var(--button-background-github-repository);
+}
+
+.button-live-link {
+    background: #359AF2;
 }

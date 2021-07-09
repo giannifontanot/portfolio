@@ -16,3 +16,8 @@ You can contribute by letting me know how can I help you in a website developmen
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
 This work is provided with a MIT license in case you want to create your own portfolio using my template.
+
+## Hard code to put an eye on
+There are two importante variables
+js width
+css

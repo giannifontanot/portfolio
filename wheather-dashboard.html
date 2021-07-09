@@ -20,18 +20,18 @@
           integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
           rel="stylesheet"/>
 
+    <link href="./assets/css/globals.css" rel="stylesheet">
     <link href="./assets/css/pure-menu.css" rel="stylesheet">
-    <link href="assets/css/globals.css" rel="stylesheet">
-    <link href="./assets/css/visible.css" rel="stylesheet">
-    <link href="assets/css/screen-size.css" rel="stylesheet">
+    <link href="./assets/css/screen-size.css" rel="stylesheet">
+
 </head>
 <body onload="init();" onresize="fSwitchMenu();">
 <!--navigation-->
 <nav>
-    <input checked id="cbx-label" type="checkbox">
-    <label for="cbx-label">
-        <span class="sign-close">&#9747;</span>
-        <span class="sign-hamburger">&#9776;</span>
+    <input checked type="checkbox" id="cbx-menu">
+    <label for="cbx-menu"  class="vred">
+        <span id="sign-close">&#9747;</span>
+        <span id="sign-hamburger">&#9776;</span>
     </label>
     <h1 id="header_owner">Gianni Fontanot</h1>
     <div class="pure-menu pure-menu-horizontal">
@@ -99,7 +99,7 @@
     </div>
 </div>
 
-<script src="./assets/scripts/every-page-script.js"></script>
+<script src="assets/scripts/global.js"></script>
 </body>
 </html>
 
