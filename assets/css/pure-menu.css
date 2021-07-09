@@ -17,6 +17,7 @@
 
 body {
     font-family: prompt, sans-serif;
+    background-color: var(--body-background);
 }
 
 nav {
@@ -130,6 +131,10 @@ label #sign-close, #sign-hamburger {
 }
 
 .article-flex-container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -152,6 +157,10 @@ label #sign-close, #sign-hamburger {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -180,7 +189,7 @@ footer {
     letter-spacing: 1px;
 }
 
-.contact-text{
+.contact-text {
     font-size: 2vh;
     margin-top: 0;
     margin-right: 5vh;
@@ -233,6 +242,26 @@ footer {
     margin: 2px;
 }
 
-.vred {
-    /*border: 1px solid red;*/
+. {
+    border: 1px solid red;
+}
+
+.img-about{
+
+}
+
+.polaroid-container{
+    width: 100%; display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.polaroid{
+    background-color: #fff;
+    padding: 10px 10px 35px 10px;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 }

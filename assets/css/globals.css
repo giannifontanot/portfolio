@@ -9,6 +9,8 @@
      --adobe-color-4: #359AF2;
      --adobe-color-5: #F2E205;
 
+    /*body*/
+    --body-background: #04182B;
     /*buttons*/
     --button-color: white;
     --button-background-success: rgb(28, 184, 65);
