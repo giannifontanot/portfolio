@@ -103,7 +103,18 @@ nav ul li a {
     color: var(--banner-text-heading);
     margin-top: -180px;
     font-size: 60px;
+    /*font-size: 9vh;*/
     text-align: center;
+}
+
+.banner-text >h4 {
+    font-family: 'Big John', serif;
+    color: var(--banner-text-heading);
+    margin-top: -180px;
+    font-size: 60px;
+    /*font-size: 9vh;*/
+    text-align: center;
+    display: inline-block;
 }
 
 label #sign-close, #sign-hamburger {
