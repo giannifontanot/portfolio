@@ -2,70 +2,144 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio</title>
+  <title>Group Project - Portfolio</title>
+  <!--    PureCSS requirement-->
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
 
-  <link crossorigin="anonymous" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
-        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" rel="stylesheet"/>
+  <!--    PureCSS requirement-->
+  <link crossorigin="anonymous"
+        href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+        rel="stylesheet"/>
   <link href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" rel="stylesheet">
 
+  <!--    fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link crossorigin="anonymous"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        rel="stylesheet"/>
 
+  <link href="./assets/css/globals.css" rel="stylesheet">
   <link href="./assets/css/pure-menu.css" rel="stylesheet">
+  <link href="./assets/css/menu-orientation.css" rel="stylesheet">
+  <link href="./assets/css/screen-orientation-portrait.css" rel="stylesheet">
+  <link href="./assets/css/screen-orientation-landscape.css" rel="stylesheet">
 
 </head>
-<body onload="">
-<!--menu-->
+<body onload="init();" onresize="fSwitchMenu();">
+<!--navigation-->
 <nav>
-  <input id="cbx-label" type="checkbox">
-  <label for="cbx-label">
+  <input checked type="checkbox" id="cbx-menu">
+  <label for="cbx-menu">
     <span id="sign-close">&#9747;</span>
     <span id="sign-hamburger">&#9776;</span>
   </label>
-  <h1>Gianni Fontanot</h1>
-  <ul>
-    <li><a class="pure-menu-link" href="javascript:fOpenHTML('index.html');">Home</a></li>
-    <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-      <a class="pure-menu-link" href="#">Live Portfolio</a>
-      <ul class="pure-menu-children">
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="javascript:fOpenLive('Wheather-Dashboard');">Weather Dashboard</a>
-        </li>
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="javascript:fOpenLive('password-generator');">Password Generator</a>
-        </li>
-        <li class="pure-menu-item">
-          <a class="pure-menu-link" href="javascript:fOpenLive('Date-night-in');">Project: Date Night In</a>
-        </li>
-      </ul>
-    </li>
-    <li><a class="pure-menu-link"
-           href="javascript:window.open('https://github.com/giannifontanot', '_blank');">GitHub</a>
-    </li>
-    <li><a class="pure-menu-link"
-           href="javascript:window.open('https://www.linkedin.com/in/gianni-fontanot', '_blank');">Linkedin</a>
-    </li>
-    <li><a class="pure-menu-link"
-           href="javascript:window.open('./assets/files/Gianni-Fontanot-RESUME-June-2021.pdf', '_blank');">Resume</a>
-    </li>
-    <li><a class="pure-menu-link" href="javascript:fOpenHTML('contact.html');">Contact</a></li>
-    <li><a class="pure-menu-link" href="javascript:fOpenHTML('about.html');">About</a></li>
-
-  </ul>
+  <h1 id="header_owner">Gianni Fontanot</h1>
+  <div class="pure-menu pure-menu-horizontal">
+    <ul class="pure-menu-list">
+      <li class="pure-menu-item"><a class="pure-menu-link" href="javascript:fOpenHTML('index.html');">Home</a>
+      </li>
+      <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+        <a class="pure-menu-link" href="#">Live Portfolio</a>
+        <ul class="pure-menu-children">
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="javascript:fOpenHTML('weather-dashboard.html');">Weather
+              Dashboard</a>
+          </li>
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="javascript:fOpenHTML('password-generator.html');">Password
+              Generator</a>
+          </li>
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="javascript:fOpenHTML('portfolio-site.html');">Portfolio site</a>
+          </li>
+          <li class="pure-menu-item">
+            <a class="pure-menu-link" href="javascript:fOpenHTML('Date-night-in.html');">Group Project: Date Night
+              In</a>
+          </li>
+        </ul>
+      </li>
+      <li class="pure-menu-item"><a class="pure-menu-link"
+                                    href="javascript:window.open('https://github.com/giannifontanot', '_blank');">GitHub</a>
+      </li>
+      <li class="pure-menu-item"><a class="pure-menu-link"
+                                    href="javascript:window.open('https://www.linkedin.com/in/gianni-fontanot', '_blank');">Linkedin</a>
+      </li>
+      <li class="pure-menu-item"><a class="pure-menu-link"
+                                    href="javascript:window.open('./assets/files/Gianni-Fontanot-RESUME.pdf', '_blank');">Resume</a>
+      </li>
+      <li class="pure-menu-item"><a class="pure-menu-link"
+                                    href="javascript:fOpenHTML('contact.html');">Contact</a></li>
+      <li class="pure-menu-item"><a class="pure-menu-link" href="javascript:fOpenHTML('about.html');">About</a>
+      </li>
+    </ul>
+  </div>
 </nav>
-<!--menu-->
-<!--body-->
 <div class="banner-area">
-  <div class="banner-text">
-    <h2>Date Night In</h2>
+  <div class="whiteboard">
+    <article class="article-flex-container">
+      <h3>Group Project</h3>
+      <!--            Section 1: Description-->
+      <section class="description-container">
+        <h4>Plan your date with a dinner and a movie!</h4>
+        <p>
+          As students of the <b>SMU Full Stack Bootcamp</b>, we created this project together. The page reads two API
+          services,
+          one for movies and the other for recipies, and combine them together to suggest what to watch and what to
+          eat for a great date.
 
-
+        </p>
+        <div class="button-container">
+          <button class="pure-button button-github-repository" onclick="fOpenRepoOther('pazjenni04','Date-night-in')">
+            <i class="fab fa-github"></i>&nbsp;&nbsp;GitHub repo
+          </button>
+          <button class="pure-button button-live-link" onclick="fOpenLiveOther('pazjenni04','Date-night-in')">
+            <i class="fas fa-satellite-dish"></i>&nbsp;&nbsp;Live link
+          </button>
+        </div>
+      </section>
+      <!--            Section 2: Image-->
+      <section class="image-container text-center">
+        <img  height="80%" class="pure-img img-portfolio"  src="./assets/images/Date-night-in.gif"/>
+      </section>
+    </article>
+    <footer>&copy Gianni Fontanot 2021</footer>
   </div>
 </div>
-<!--body-->
+
+<script src="./assets/scripts/globals.js"></script>
 <script src="./assets/scripts/commons.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

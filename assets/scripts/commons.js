@@ -46,6 +46,17 @@ function fOpenLive(pPage) {
 }
 
 /**
+ * Open a live link from GitHub.
+ * The page will open in a new tab.
+ * @param pRepo GitHub
+ * @param pPage name and path of the page
+ */
+function fOpenLiveOther(pRepo, pPage) {
+    window.open('https://' + pRepo + '.github.io/' + pPage, '_blank',);
+    console.error('fOpenLiveOther: ' + 'type: ' + e.messageType + ' message: ' + e.message);
+}
+
+/**
  * Open a static page of the portfolio
  * that exists in the root folder.
  * The page will open in a new tab.
@@ -67,6 +78,19 @@ function fOpenHTML(pPage) {
 function fOpenRepo(pPage) {
     try {
         window.open('https://github.com/giannifontanot/' + pPage, '_blank',);
+    } catch (e) {
+        console.error('fOpenRepo: ' + 'type: ' + e.messageType + ' message: ' + e.message);
+    }
+}
+
+/**
+ * Open a GitHub's front page of the selected repo.
+ * The page will open in a new tab.
+ * @param pPage
+ */
+function fOpenRepoOther(pRepo, pPage) {
+    try {
+        window.open('https://github.com/' + pRepo + '/' + pPage, '_blank',);
     } catch (e) {
         console.error('fOpenRepo: ' + 'type: ' + e.messageType + ' message: ' + e.message);
     }

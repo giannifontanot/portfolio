@@ -164,6 +164,16 @@ label #sign-close, #sign-hamburger {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
 }
 
+.img-portfolio-other {
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+    height: 70%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-top: auto;*/
+    /*margin-bottom: auto;*/
+}
+
 .button-container {
     width: fit-content;
     margin-right: auto;
