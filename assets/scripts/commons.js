@@ -40,9 +40,25 @@ function fSwitchMenu() {
  * The page will open in a new tab.
  * @param pPage name and path of the page
  */
-function fOpenLive(pPage) {
-    window.open('https://giannifontanot.github.io/' + pPage, '_blank',);
-    console.error('fOpenLive: ' + 'type: ' + e.messageType + ' message: ' + e.message);
+function fOpenLiveGitHub(pPage) {
+    try {
+        window.open('https://giannifontanot.github.io/' + pPage, '_blank',);
+    } catch (e) {
+        console.error('fOpenLiveGitHub: ' + 'type: ' + e.messageType + ' message: ' + e.message);
+    }
+}
+
+/**
+ * Open a live link from Heroku.
+ * The page will open in a new tab.
+ * @param pPage name and path of the page
+ */
+function fOpenLiveHeroku(pPage) {
+    try {
+        window.open('https://gianni-' + pPage + '.herokuapp.com/', '_blank');
+    } catch (e) {
+        console.error('fOpenLiveHeroku: ' + 'type: ' + e.messageType + ' message: ' + e.message);
+    }
 }
 
 /**
@@ -51,9 +67,13 @@ function fOpenLive(pPage) {
  * @param pRepo GitHub
  * @param pPage name and path of the page
  */
-function fOpenLiveOther(pRepo, pPage) {
-    window.open('https://' + pRepo + '.github.io/' + pPage, '_blank',);
-    console.error('fOpenLiveOther: ' + 'type: ' + e.messageType + ' message: ' + e.message);
+function fOpenLiveGitHubOther(pRepo, pPage) {
+
+    try {
+        window.open('https://' + pRepo + '.github.io/' + pPage, '_blank',);
+    } catch (e) {
+        console.error('init:' + 'type: ' + e.messageType + 'message: ' + e.message);
+    }
 }
 
 /**

@@ -164,6 +164,37 @@ label #sign-close, #sign-hamburger {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
 }
 
+.img-tech-blog{
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+    margin-top: 10px;
+    width: 80vh;
+}
+
+.img-employee-management-system{
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 70vh;
+}
+
+.img-test-taker{
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 85vh;
+}
+
+.img-ecommerce-backend{
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);
+    margin-top: 10px;
+    margin-left: -5px;
+    width: 80vh;
+}
+
 .img-portfolio-other {
     border: 2px solid black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1.2);

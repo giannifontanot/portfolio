@@ -1,110 +1,117 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio Site</title>
-  <!--    PureCSS requirement-->
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <title>Portfolio Site</title>
+    <!--    PureCSS requirement-->
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <!--    PureCSS requirement-->
-  <link crossorigin="anonymous"
-        href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
-        integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
-        rel="stylesheet"/>
-  <link href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" rel="stylesheet">
+    <!--    PureCSS requirement-->
+    <link crossorigin="anonymous"
+          href="https://unpkg.com/purecss@2.0.6/build/pure-min.css"
+          integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5"
+          rel="stylesheet"/>
+    <link href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" rel="stylesheet">
 
-  <!--    fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-  <link crossorigin="anonymous"
-        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-        rel="stylesheet"/>
+    <!--    fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link crossorigin="anonymous"
+          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+          rel="stylesheet"/>
 
-  <link href="./assets/css/globals.css" rel="stylesheet">
-  <link href="./assets/css/pure-menu.css" rel="stylesheet">
-  <link href="./assets/css/menu-orientation.css" rel="stylesheet">
-  <link href="./assets/css/screen-orientation-portrait.css" rel="stylesheet">
-  <link href="./assets/css/screen-orientation-landscape.css" rel="stylesheet">
+    <link href="./assets/css/globals.css" rel="stylesheet">
+    <link href="./assets/css/pure-menu.css" rel="stylesheet">
+    <link href="./assets/css/menu-orientation.css" rel="stylesheet">
+    <link href="./assets/css/screen-orientation-portrait.css" rel="stylesheet">
+    <link href="./assets/css/screen-orientation-landscape.css" rel="stylesheet">
 
 </head>
 <body onload="init();" onresize="fSwitchMenu();">
 <!--navigation-->
 <nav>
-  <input checked type="checkbox" id="cbx-menu">
-  <label for="cbx-menu">
-    <span id="sign-close">&#9747;</span>
-    <span id="sign-hamburger">&#9776;</span>
-  </label>
-  <h1 id="header_owner">Gianni Fontanot</h1>
-  <div class="pure-menu pure-menu-horizontal">
-    <ul class="pure-menu-list">
-      <li class="pure-menu-item"><a class="pure-menu-link" href="javascript:fOpenHTML('index.html');">Home</a>
-      </li>
-      <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-        <a class="pure-menu-link" href="#">Live Portfolio</a>
-        <ul class="pure-menu-children">
-<!--          MENU TO UPDATE - BEGIN -->
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="javascript:fOpenHTML('tech-blog.html');">Tech Blog</a>
+    <input checked id="cbx-menu" type="checkbox">
+    <label for="cbx-menu">
+        <span id="sign-close">&#9747;</span>
+        <span id="sign-hamburger">&#9776;</span>
+    </label>
+    <h1 id="header_owner">Gianni Fontanot</h1>
+    <div class="pure-menu pure-menu-horizontal">
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item"><a class="pure-menu-link" href="javascript:fOpenHTML('index.html');">Home</a>
             </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="javascript:fOpenHTML('employee-management-system.html');">Employee Management System</a>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a class="pure-menu-link" href="#">Live Portfolio</a>
+                <ul class="pure-menu-children">
+                    <!--          MENU TO UPDATE - BEGIN -->
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('tech-blog.html');">Tech Blog</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('employee-management-system.html');">Employee
+                            Management System</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('test-taker.html');">Test Taker</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('ecommerce-backend.html');">E-commerce
+                            Backend</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('portfolio-site.html');">This Portfolio
+                            site</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="javascript:fOpenHTML('weather-dashboard.html');">Weather
+                            Dashboard</a>
+                    </li>
+                    <!--          MENU TO UPDATE - END -->
+                </ul>
             </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="javascript:fOpenHTML('test-taker.html');">Test Taker</a>
+            <li class="pure-menu-item"><a class="pure-menu-link"
+                                          href="javascript:window.open('https://github.com/giannifontanot', '_blank');">GitHub</a>
             </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="javascript:fOpenHTML('ecommerce-backend.html');">E-commerce Backend</a>
+            <li class="pure-menu-item"><a class="pure-menu-link"
+                                          href="javascript:window.open('https://www.linkedin.com/in/gianni-fontanot', '_blank');">Linkedin</a>
             </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="javascript:fOpenHTML('portfolio-site.html');">This Portfolio site</a>
+            <li class="pure-menu-item"><a class="pure-menu-link"
+                                          href="javascript:window.open('./assets/files/Gianni-Fontanot-RESUME.pdf', '_blank');">Resume</a>
             </li>
-            <li class="pure-menu-item">
-                <a class="pure-menu-link" href="javascript:fOpenHTML('weather-dashboard.html');">Weather Dashboard</a>
+            <li class="pure-menu-item"><a class="pure-menu-link"
+                                          href="javascript:fOpenHTML('contact.html');">Contact</a></li>
+            <li class="pure-menu-item"><a class="pure-menu-link" href="javascript:fOpenHTML('about.html');">About</a>
             </li>
-<!--          MENU TO UPDATE - END -->
         </ul>
-      </li>
-      <li class="pure-menu-item"><a class="pure-menu-link"
-                                    href="javascript:window.open('https://github.com/giannifontanot', '_blank');">GitHub</a>
-      </li>
-      <li class="pure-menu-item"><a class="pure-menu-link"
-                                    href="javascript:window.open('https://www.linkedin.com/in/gianni-fontanot', '_blank');">Linkedin</a>
-      </li>
-      <li class="pure-menu-item"><a class="pure-menu-link"
-                                    href="javascript:window.open('./assets/files/Gianni-Fontanot-RESUME.pdf', '_blank');">Resume</a>
-      </li>
-      <li class="pure-menu-item"><a class="pure-menu-link"
-                                    href="javascript:fOpenHTML('contact.html');">Contact</a></li>
-      <li class="pure-menu-item"><a class="pure-menu-link" href="javascript:fOpenHTML('about.html');">About</a>
-      </li>
-    </ul>
-  </div>
+    </div>
 </nav>
 <div class="banner-area">
-  <div class="whiteboard">
-    <article class="article-flex-container">
-      <h3>Tech Blog</h3>
-      <!--            Section 1: Description-->
-      <section class="description-container">
-        <h4>Showcase of my best projects </h4>
-        <p>This site is in itself a project, it took many hours to get developed!</p>
-        <div class="button-container">
-          <button class="pure-button button-github-repository" onclick="fOpenRepo('portfolio')">
-            <i class="fab fa-github"></i>&nbsp;&nbsp;GitHub repo
-          </button>
-          <button class="pure-button button-disabled">
-            <i class="far fa-smile-wink"></i>&nbsp;&nbsp;You are here
-          </button>
-        </div>
-      </section>
-      <!--            Section 2: Image-->
-      <section class="image-container">
-        <img class="pure-img img-portfolio" src="./assets/images/portfolio-site.gif"/>
-      </section>
-    </article>
-    <footer>&copy Gianni Fontanot 2021</footer>
-  </div>
+    <div class="whiteboard">
+        <article class="article-flex-container">
+            <h3>Tech Blog</h3>
+            <!--            Section 1: Description-->
+            <section class="description-container">
+                <h4>A blog site for techies</h4>
+                <p>This project is made using handlebars to generate the front-end dynamically, and <b>Squelize</b>
+                    with  <b> MySQL</b> to record blogger's entries in the back-end. It is live on <b>Heroku!</b>
+                </p></br>
+
+                <div class="button-container">
+                    <button class="pure-button button-github-repository" onclick="fOpenRepo('tech-blog')">
+                        <i class="fab fa-github"></i>&nbsp;&nbsp;GitHub repo
+                    </button>
+                    <button class="pure-button button-live-link" onclick="fOpenLiveHeroku('tech-blog')">
+                        <i class="fas fa-satellite-dish"></i>&nbsp;&nbsp;Live link
+                    </button>
+                </div>
+            </section>
+            <!--            Section 2: Image-->
+            <section class="image-container">
+                <img class="pure-img img-tech-blog" src="./assets/images/tech-blog.gif" alt="img-tech-blog"/>
+            </section>
+        </article>
+        <footer>&copy Gianni Fontanot 2021</footer>
+    </div>
 </div>
 
 <script src="./assets/scripts/globals.js"></script>
