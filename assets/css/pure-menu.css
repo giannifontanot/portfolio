@@ -76,6 +76,9 @@ nav ul li a {
     text-decoration: none;
 }
 
+.label-live-portfolio{
+    color:red;
+}
 
 .banner-area {
     background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/goldengate.jpg);
