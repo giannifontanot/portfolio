@@ -8,6 +8,7 @@
  *  @param - it does not receive any parameters.
  */
  function init() {
+  alert("redirect...");
      window.location.replace("https://giannifontanot.github.io/portfolio-react/");
 //     try {
 //         fSwitchMenu();
