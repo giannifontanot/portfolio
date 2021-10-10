@@ -7,13 +7,13 @@
  *  Run when the page loads.
  *  @param - it does not receive any parameters.
  */
-function init() {
-    window.location.replace("https://giannifontanot.github.io/portfolio-react/");
-    try {
-        fSwitchMenu();
-    } catch (e) {
-        console.error('init:' + 'type: ' + e.messageType + 'message: ' + e.message);
-    }
+ function init() {
+     window.location.replace("https://giannifontanot.github.io/portfolio-react/");
+//     try {
+//         fSwitchMenu();
+//     } catch (e) {
+//         console.error('init:' + 'type: ' + e.messageType + 'message: ' + e.message);
+//     }
 }
 
 /**
