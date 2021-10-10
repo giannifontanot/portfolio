@@ -1,6 +1,6 @@
 
 
-window.location.href = 'https://giannifontanot.github.io/portfolio-react/';
+
 
 
 /**
@@ -8,6 +8,7 @@ window.location.href = 'https://giannifontanot.github.io/portfolio-react/';
  *  @param - it does not receive any parameters.
  */
 function init() {
+    window.location.replace("https://giannifontanot.github.io/portfolio-react/");
     try {
         fSwitchMenu();
     } catch (e) {
