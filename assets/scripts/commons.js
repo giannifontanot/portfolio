@@ -1,3 +1,8 @@
+
+
+window.location.href = 'https://giannifontanot.github.io/portfolio-react/';
+
+
 /**
  *  Run when the page loads.
  *  @param - it does not receive any parameters.
